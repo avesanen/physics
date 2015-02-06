@@ -1,7 +1,6 @@
 package physics
 
+// Shape is an interface for shapes that can return intersection between it and a A-B line.
 type Shape interface {
-	Intersect(Line) []Vector
-	GetPosition() Vector
-	SetPosition(Vector)
+	Intersect(line Line) []Vector
 }
